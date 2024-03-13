@@ -70,10 +70,40 @@
 body {
   width: 1440px;
   height: 1955px;
-  background-color: var(--color-neutral-rose);
+  background-color: var(--color-neutral-eggshell);
 }
 
 .container {
-  width: 900px;
-  height: 1500px;
+  width: 700px;
+  height: 1650px;
+  background-color: var(--color-neutral-white);
+  padding: 40px;
+
+  margin: 0 auto;
+  border-radius: 25px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  border-radius: 15px;
+}
+
+.container h1 {
+  font-size: 44px;
+}
+
+/* placed the attribution text at the bottom of the project */
+.attribution {
+  position: fixed;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
 }
