@@ -89,7 +89,9 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  font-family: var(--ff-outfit);
 }
 
 img {
@@ -97,8 +99,87 @@ img {
 }
 
 .container h1 {
-  font-size: 44px;
+  font-size: 38px;
+  font-family: var(--ff-young);
 }
+
+.preparation-time {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  background-color: var(--color-neutral-rose);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.preparation-time h4 {
+  color: var(--color-primary-two);
+  font-family: var(--ff-outfit);
+  font-size: var(--fs-main);
+}
+
+.preparation-time ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.preparation-time li::marker {
+  color: var(--color-primary-two);
+}
+
+.ingredients li::marker,
+.instructions li::marker {
+  color: var(--color-primary-one);
+  font-weight: var(--fw-outfit-bold);
+}
+
+.preparation-time li,
+.ingredients li,
+.instructions li {
+  padding-left: 25px;
+  font-weight: var(--fw-outfit-regular);
+  font-family: var(--ff-outfit);
+  font-size: 14px;
+}
+
+.ingredients ul {
+  gap: 7.5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h2 {
+  color: var(--color-primary-one);
+  font-family: var(--ff-young);
+  font-weight: var(--fw-young);
+  padding-bottom: 10px;
+}
+
+.nutrition p {
+  padding-bottom: 10px;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0px 10px 30px;
+}
+
+.bolded-item {
+  color: var(--color-primary-one);
+  font-weight: var(--fw-outfit-semibold);
+}
+
+/* mobile design */
+
 
 /* placed the attribution text at the bottom of the project */
 .attribution {
