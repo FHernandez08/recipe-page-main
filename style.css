@@ -94,7 +94,7 @@ body {
   font-family: var(--ff-outfit);
 }
 
-img {
+.image {
   border-radius: 15px;
 }
 
@@ -179,7 +179,33 @@ h2 {
 }
 
 /* mobile design */
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    height: 2043px;
+    background-color: var(--color-neutral-white);
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+  }
 
+  .container {
+    max-width: 100%;
+    max-height: 100%;
+    gap: 50px;
+    padding: 25px;
+  }
+
+  .container h1 {
+    font-weight: var(--fw-outfit-regular);
+  }
+
+  .attribution {
+    display: none;
+  }
+}
 
 /* placed the attribution text at the bottom of the project */
 .attribution {
